@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello, world :D</h1>
+</body>
+
+<script>
+
+    let nombre = prompt("cual es tu nombre?");
+    let edad = parseInt (prompt("cual es tu edad?") );
+    let anho = 2022;
+
+    let calculoEdad = anho - edad
+
+    if(edad < 18) {
+        let mayorEdad = calculoEdad + 18
+        console.log('Eres menor de edad, no podemos darte el alta hasta el anho ' + mayorEdad)
+    }
+      else if (edad> 18 && edad <25){
+        console.log ('Tienes un 10% de descuento')
+      }
+       else if (edad=== 18 && 25 ){
+        console.log ('Premio Tienes un 20% de descuento ')
+       } 
+       else if (edad>  25){
+        console.log ('Lo sentimos, pero no tienes descuento')
+       }
+
+   
+
+
+
+</script>
+
+
+
+
+</html>
