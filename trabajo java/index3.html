@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+/*si es mayor qur 550 no hay cambio
+si es menor preguntar si es menor a 300
+si es menor a 300 preguntar si es divisible por 10 o no(si lo es das el resultado y devolves con monedas de 10) si no es, le restas el vuelto y lo dividis por 10.
+si es mayor a 300 fijo son monedas de 10,*/
+
+
+    let recibirmaquina = parseInt(prompt("Inserte billete"));
+    let elijaproducto = parseInt(prompt("Elija producto: 50, 100, 200, 500"));
+
+    let vuelto = recibirmaquina - elijaproducto;
+    console.log("tu vuelto es " + vuelto);
+    if (vuelto > 500 ){
+        console.log("No hay cambio")
+    }
+    else if (vuelto < 500 ){
+        console.log("Hay cambio")
+    }
+    
+   
+
+
+
+</script>
+</html>
