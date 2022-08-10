@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+/*Escribir un programa que lea 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.*/
+
+const alumnos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let mayores7 = 0
+    let menores7 = 0
+
+    for (let index = 0; index < alumnos.length; index++){
+    if( alumnos[index] >= 0 && alumnos[index] < 7 ){
+        menores7++
+    }
+    else if( alumnos[index] >= 7 && alumnos[index] < 10){
+        mayores7++
+    }
+    }
+    console.log(mayores7)
+    console.log(menores7)
+    
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Calculadora">
+    <title>Ciclos </title>
+</head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Calculadora">
+    <title>Ciclos </title>
+</head>
+
+
+<script>
+    
+    document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        const op2 = document.querySelector('#op').value;
+        let r;
+        if(op2 == '+'){
+            r = n1 + n2;
+        }else if( op2 == '-'){
+            r = n1 - n2;
+        }else if(op2 == '*'){
+            r = n1 * n2;
+        }else if(op2 == '/'){
+            r = n1 / n2;
+        }
+        document.querySelector('#r2').innerHTML = r;
+    });
+
+</script>
+
+    Introduce el primer valor
+    <br>
+    <input type="text" id="valor" value="">
+    <br> Introduce el segundo valor
+    <br>
+    <input type="text" id="valor2" value="">
+    <br>
+    <input type="button" value="+" onclick="suma()">
+    <p id="resultado"></p>
+    <input type="button" value="*" onclick="multiplicar">
+</body>
+
+</html>

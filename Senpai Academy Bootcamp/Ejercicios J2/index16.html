@@ -9,22 +9,35 @@
 <body>
     <script>
 
-    const alumnos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    let mayores7 = 0
-    let menores7 = 0
+        const numeros = []
+        let positivos = 0;
+        let negativos = 0;
+        let multiplos = 0;
+        let pares = 0;
 
-    for (let index = 0; index < alumnos.length; index++){
-    if( alumnos[index] >= 0 && alumnos[index] < 7 ){
-        menores7++
-    }
-    else if( alumnos[index] >= 7 && alumnos[index] < 10){
-        mayores7++
-    }
-    }
-
-    console.log(mayores7)
-    console.log(menores7)
-
+        for (let i = 0; i < 10; i++) {
+            const element = parseInt (prompt("Ingrese el "+(i+1)+"nro" ));
+            numeros.push(element);
+        }
+        for(let i=0; i <numeros.length; i++){
+            let valoringresado = numeros[i]
+            if (valoringresado <0) {
+                negativos++
+            } else {
+                positivos++
+            }
+            if (valoringresado%15===0){
+                multiplos++
+            }
+            if (valoringresado%2===0){
+                pares+= valoringresado
+            }
+           
+        }
+            document.write( "<br> Los numeros positivos son: "+positivos);
+            document.write( "<br> Los numeros negativos son: "+negativos);
+            document.write( "<br>Los numeros multiplos de 15 son: "+multiplos);
+            document.write( "<br> Los numeros pares son: "+pares);
 
     </script>
 </body>
