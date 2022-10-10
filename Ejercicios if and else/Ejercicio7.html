@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const lado1 = prompt("Introduce el primer lado");
+        const lado2 = prompt("Introduce el segundo lado");
+        const lado3 = prompt("Introduce el tercer lado");
+        if(lado1 == lado2 && lado2 == lado3){
+            console.log("El triángulo es equilátero");
+        } else if(lado1 == lado2 || lado2 == lado3 || lado1 == lado3){
+            console.log("El triángulo es isósceles");
+        } else {
+            console.log("El triángulo es escaleno");
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>

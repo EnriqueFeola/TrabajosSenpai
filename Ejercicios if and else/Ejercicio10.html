@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //Escribir un programa JavaScript en el que el programa escoge al azar un entero entre
+        //1 y 10. El usuario debe adivinar el número. Si el usuario acierta, se muestra un mensaje
+        //de felicitación. Si no acierta, se le muestra el número que ha escogido el programa y se
+        //le vuelve a pedir otro número. El programa termina cuando el usuario acierta.
+
+        const numero = Math.floor(Math.random() * 10) + 1;
+        let numeroUsuario = prompt("Introduce un número del 1 al 10");
+        if(numeroUsuario === numero){
+            
+        console.log("Buen Trabajo, has acertado el número" + numeroUsuario);
+
+        } else {
+
+            console.log("Lo siento, el número era " + numero);
+
+        }
+    
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
