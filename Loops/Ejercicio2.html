@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+   
+
+        function sumaDigitos(numero){
+            let suma = 0;
+            let i = 0;
+            let digito = 0;
+            let numeroString = numero.toString();
+            let numeroStringArray = numeroString.split("");
+            let numeroStringArrayLength = numeroStringArray.length;
+            while(i<numeroStringArrayLength){
+                digito = parseInt(numeroStringArray[i]);
+                if(isNaN(digito)){
+                    suma = 0;
+                    break;
+                }
+                suma = suma + digito;
+                i++;
+            }
+            return suma;
+        }
+
+        let numero = prompt("Ingrese un número");
+        let suma = sumaDigitos(numero);
+        console.log(suma);
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
